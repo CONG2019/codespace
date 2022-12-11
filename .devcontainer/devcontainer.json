@@ -1,9 +1,14 @@
 {
-  "image": "demo-devcontainer",
+  "name": "demo-devcontainer",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",  // Any generic, debian-based image
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1": {
             "version": "latest",
             "moby": true
+    },
+    "ghcr.io/devcontainers/features/python:1": {
+            "version":"3.9",
+            "installTools":true
     }
   }
 }
